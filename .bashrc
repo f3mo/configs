@@ -4,6 +4,9 @@
 # 
 export EDITOR=vim
 export PATH=$HOME.local/bin:$PATH
+
+
+
 #catbox.moe upload
 cup (){
 path=$( realpath "${1}")
@@ -13,20 +16,6 @@ aplay $HOME/.config/bark.wav &> /dev/null
 }
 
 
-#SYNC DOTFILES
-upd () {
-    conf="$HOME/conf/"
-
-    [ -d "$conf" ] || mkdir "$conf"
-
-    cp -r "$HOME/.config" "$conf"
-    cp -r "$HOME/.profile" "$conf"
-    cp -r "$HOME/.bashrc" "$conf"
-    cp -r "$HOME/.vim" "$conf"
-    cp -r "$HOME/.irssi" "$conf"
-    cp -r "$HOME/.local" "$conf"
-    cp -r "$HOME/.fonts" "$conf"
-}
 
 # ffmpeg screen record
 frec () {
